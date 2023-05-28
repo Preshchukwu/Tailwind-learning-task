@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind component</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="stacked-list-container">
+        <div class="list-items-container">
+            <div class="left-content-container">
+                <div class="title-and-badge-container">
+                    <div class="title-container">
+                        <h1>GraphQL API</h1>
+                    </div>
+
+                    <div class="badge-container">
+                        <p>Complete</p>
+                    </div>
+                </div>
+
+                <div class="date-and-creator-container">
+                    <p>Due on July 23rd, 2023 . Created By Alexander McQuin</p>
+                </div>
+            </div>
+
+            <div class="right-content-container">
+                <div class="button-container">
+                    <button class="button"> View Project</button>
+                </div>
+
+                <div class="icon-container">
+                    <i class="fa-solid fa-ellipsis-vertical icon" id="icon"></i>
+                </div>
+
+                <div class="small-modal-container" id="small-modal">
+                    <ul class="ul">
+                        <li class="li"><a href="#" class="a"> Edit</a></li>
+                        <li class="li"><a href="#" class="a"> Move</a></li>
+                        <li class="li" id="delete"><a href="#" class="a"> Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+   
+
+    <div class="popup-container" id="popup">
+        <div class="question-text-container">
+            <p> Are you sure you want to delete?</p>
+        </div>
+
+        <div class="two-button-container">
+            <div class="first-button-container">
+                <button class="popup-button" id="yes-button">Yes</button>
+            </div>
+
+            <div class="first-button-container">
+                <button class="popup-button" id="nh">No</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
